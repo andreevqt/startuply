@@ -1,0 +1,105 @@
+.section {
+  $parent: &;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  &--our-history {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    #{$parent}__heading {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    #{$parent}__heading-top {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    #{$parent}__subheading {
+      font-size: 18px;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    #{$parent}__read-more {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      color: $primary-darken;
+      i {
+        margin-left: 14px;
+      }
+      &:hover {
+        $color: $primary-darken;
+      }
+    }
+  }
+
+  &__heading-top {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  &__heading {
+    font-size: 46px;
+    margin-bottom: 40px;
+    font-weight: 500;
+  }
+
+  &--projects {
+  }
+
+  &--testimonials {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--video {
+    @extend %background-image;
+    position: relative;
+    z-index: 3;
+    background-image: url("/images/code.png");
+    color: $white;
+
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: linear-gradient(90deg, rgba(147, 75, 255, 1) 0%, rgba(95, 58, 252, 0.7) 100%);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &--recent-posts {
+    $angle: 3deg;
+    position: relative;
+    z-index: 2;
+    background-color: $white;
+    #{$parent}__heading,
+    #{$parent}__heading-top {
+      font-weight: 300;
+      text-align: center;
+    }
+
+    margin-top: -60px;
+
+    margin-bottom: -60px;
+
+    #{$parent}__skewed-content {
+      transform: skew(0, -$angle);
+    }
+    transform: skew(0, $angle);
+  }
+}
+
+.section-image {
+  @extend %background-image;
+  background-attachment: fixed;
+  height: 460px;
+  background-color: #eeeeee;
+}

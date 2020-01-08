@@ -1,0 +1,58 @@
+.projects {
+}
+
+.project-item {
+  font-size: 16px;
+  line-height: 1;
+  position: relative;
+  margin-bottom: 60px;
+
+  &__thumbnail {
+    width: 100%;
+    height: auto;
+  }
+
+  &:hover {
+    .project-item__overlay {
+      opacity: 0.949;
+    }
+  }
+
+  &__overlay {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, rgb(147, 75, 255) 0%, rgb(95, 58, 252) 100%);
+  }
+
+  &__button {
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    line-height: 37px;
+    background-color: $white;
+    margin-right: 15px;
+    border-radius: 50%;
+    color: $primary-darken;
+  }
+
+  &__heading {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__thumbnail-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__subheading {
+    color: #cccccc;
+  }
+}

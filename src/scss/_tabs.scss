@@ -1,0 +1,16 @@
+.nav-tabs {
+  font-size: 16px;
+  border-bottom: none;
+  margin-top: 42px;
+  .nav-link {
+    border: none;
+    padding: 17px 50px;
+    border-radius: 100px;
+    color: #c7c7c7;
+    &.active {
+      color: $white;
+      background-color: $primary-darken;
+      box-shadow: 0px 6px 24px 0px rgba(116, 65, 253, 0.5);
+    }
+  }
+}
