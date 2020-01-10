@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Take landing page">
+  <meta name="Keywords" content="Take, landing page">
+  <title>Startuply</title>
+  <link rel="stylesheet" href="css/app.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700&display=swap" rel="stylesheet">
+  <!-- Font awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body class="">
+  <!-- Modal -->
+  <div class="modal modal--video" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="video-modal-label"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="videoEmbed" allowscriptaccess="always"
+              allow="autoplay"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- !Modal -->
+  <header class="header">
+    <div class="container">
+      <div class="row align-items-center no-gutters">
+        <div class="col-auto d-flex align-items-center">
+          <div class="header__menu-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32">
+              <path d="M0 3h32v3H0zM0 14.5h32v3H0zM0 26h32v3H0z"></path>
+            </svg>
+          </div>
+          <a href="/" class="header__logo">STARTUPLY.</a>
+        </div>
+
+        <ul class="col mx-auto header__menu menu">
+          <li class="menu__item menu__item--active"><a href="#">HOME</a></li>
+          <li class="menu__item"><a href="#">ABOUT</a></li>
+          <li class="menu__item"><a href="#">SERVICES</a></li>
+          <li class="menu__item"><a href="#">TEAM</a></li>
+          <li class="menu__item"><a href="#">BLOG</a></li>
+          <li class="menu__item"><a href="#">CONTACT US</a></li>
+        </ul>
+
+        <div class="ml-auto col-sm-auto header__buttons">
+          <a href="#" class="header__button">LOGIN</a>
+          <a href="#" class="header__button header__button--active">SIGN UP FREE</a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu">
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__list-item"><a href="#">HOME</a> </li>
+      <li class="mobile-menu__list-item"><a href="#" >ABOUT</a></li>
+      <li class="mobile-menu__list-item"><a href="#">SERVICES</a></li>
+      <li class="mobile-menu__list-item"><a href="#">TEAM</a></li>
+      <li class="mobile-menu__list-item"><a href="#">BLOG</a></li>
+      <li class="mobile-menu__list-item"><a href="#">CONTACT US</a></li>
+    </ul>
+
+    <button type="button" class="mobile-menu__close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+      </svg>
+    </button>
+
+  </div>
+  <section class="content">
+    <div class="hero">
+      <div class="hero__content container">
+        <div class="hero-slider">
+
+          <div class="hero-slider__item">
+            <div class="hero-slider__inner">
+              <div class="hero-slider__top-heading">
+                We are hard, We pay Hard
+              </div>
+              <h3 class="hero-slider__heading">
+                We are a design & <br> development agency.
+              </h3>
+              <div class="hero-slider__bottom-heading">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui cum eos, <br> provident
+                officia eius
+                voluptas.Tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-slider__item">
+            <div class="hero-slider__inner">
+              <div class="hero-slider__top-heading">
+                We are hard, We pay Hard
+              </div>
+              <h3 class="hero-slider__heading">
+                We are a design & <br> development agency.
+              </h3>
+              <div class="hero-slider__bottom-heading">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui cum eos, <br> provident
+                officia eius
+                voluptas.Tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-slider__item">
+            <div class="hero-slider__inner">
+              <div class="hero-slider__top-heading">
+                We are hard, We pay Hard
+              </div>
+              <h3 class="hero-slider__heading">
+                We are a design & <br> development agency.
+              </h3>
+              <div class="hero-slider__bottom-heading">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui cum eos, <br> provident
+                officia eius
+                voluptas.Tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- !hero-slider -->
+        <div class="row no-gutters hero-cards">
+
+          <div class="col-md-4 col-sm-6 ">
+            <div class="hero-card">
+              <img src="/images/levels.png" alt="levels" class="hero-card__icon">
+              <div class="hero-card__heading">
+                Web Development
+              </div>
+              <div class="hero-card__subheading">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua.
+              </div>
+              <div class="hero-card__hidden">
+                <ul class="hero-card__list">
+                  <li class="hero-card__list-item"><a href="#"><i class="fa fa-arrow-circle-right"></i>Web Design</a>
+                  </li>
+                  <li class="hero-card__list-item"><a href="#"><i class="fa fa-arrow-circle-right"></i>Online
+                      catalogues</a></li>
+                  <li class="hero-card__list-item"><a href="#"><i class="fa fa-arrow-circle-right"></i>Portal
+                      systems</a>
+                  </li>
+                </ul>
+                <a href="#" class="hero-card__read-more">READ MORE <i class="fa fa-caret-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="hero-card">
+              <img src="/images/pencil-case.png" alt="levels" class="hero-card__icon">
+              <div class="hero-card__heading">
+                Graphic Design
+              </div>
+              <div class="hero-card__subheading">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua.
+              </div>
+              <div class="hero-card__hidden">
+                <ul class="hero-card__list">
+                  <li class="hero-card__list-item"><a href="#"><i class="fa fa-arrow-circle-right"></i>Web Design</a>
+                  </li>
+                  <li class="hero-card__list-item"><a href="#"><i class="fa fa-arrow-circle-right"></i>Online
+                      catalogues</a></li>
+                  <li class="hero-card__list-item"><a href="#"><i class="fa fa-arrow-circle-right"></i>Portal
+                      systems</a>
+                  </li>
+                </ul>
+                <a href="#" class="hero-card__read-more">READ MORE <i class="fa fa-caret-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="hero-card">
+              <img src="/images/target.png" alt="levels" class="hero-card__icon">
+              <div class="hero-card__heading">
+                Internet Marketing
+              </div>
+              <div class="hero-card__subheading">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua.
+              </div>
+              <div class="hero-card__hidden">
+                <ul class="hero-card__list">
+                  <li class="hero-card__list-item"><a href="#"><i class="fa fa-arrow-circle-right"></i>Web Design</a>
+                  </li>
+                  <li class="hero-card__list-item"><a href="#"><i class="fa fa-arrow-circle-right"></i>Online
+                      catalogues</a></li>
+                  <li class="hero-card__list-item"><a href="#"><i class="fa fa-arrow-circle-right"></i>Portal
+                      systems</a>
+                  </li>
+                </ul>
+                <a href="#" class="hero-card__read-more">READ MORE <i class="fa fa-caret-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- !hero-content -->
+      </div>
+      <!-- !hero -->
+    </div>
+
+    <section class="section section--our-history">
+      <div class="container">
+        <h3 class="section__heading-top">ABOUT OUR HISTORY</h3>
+        <h3 class="section__heading">We are Startuply and we create <br>
+          efficient web design and branding.</h3>
+        <p class="section__subheading">
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud
+          exercitation ullamco laboris nisi ut aliquip ea commodo consequat. Duis aute irure dolor. In
+          reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident
+          cillum dolore.
+        </p>
+        <div class="d-flex justify-content-center">
+          <a href="#" class="section__read-more">READ MORE <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+      <!-- !history -->
+    </section>
+
+    <section class="section-image" style="background-image:url('/images/paper.png'); background-position-y: 40%;">
+    </section>
+
+    <section class="section section--testimonials">
+      <div class="testimonials-slider">
+
+        <div class="testimonials-slider__item">
+          <div class="testimonials-slider__inner container">
+            <div class="testimonials-slider__quote">
+              “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ”
+            </div>
+            <div class="testimonials-slider__author">
+              - JIMMY FERRARA , General Manager
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-slider__item">
+          <div class="testimonials-slider__inner container">
+            <div class="testimonials-slider__quote">
+              “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ”
+            </div>
+            <div class="testimonials-slider__author">
+              - JIMMY FERRARA , General Manager
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-slider__item">
+          <div class="testimonials-slider__inner container">
+            <div class="testimonials-slider__quote">
+              “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ”
+            </div>
+            <div class="testimonials-slider__author">
+              - JIMMY FERRARA , General Manager
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- !testimonials -->
+    </section>
+    
+    <section class="section section--projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h3 class="section__heading-top">OUR AWESOME WORK</h3>
+            <h3 class="section__heading">Our Latest Projects</h3>
+          </div>
+          <div class="col">
+            <ul class="nav nav-tabs projects-tabs" id="myTab" role="tablist">
+              <li class="nav-item projects-tabs__item ">
+                <a class="nav-link projects-tabs__link d-block active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="home"
+                  aria-selected="true">All</a>
+              </li>
+              <li class="nav-item projects-tabs__item ">
+                <a class="nav-link projects-tabs__link" id="graphic-tab" data-toggle="tab" href="#graphic" role="tab"
+                  aria-controls="profile" aria-selected="false">Graphic design</a>
+              </li>
+              <li class="nav-item projects-tabs__item ">
+                <a class="nav-link projects-tabs__link " id="branding-tab" data-toggle="tab" href="#brandings" role="tab"
+                  aria-controls="brandings" aria-selected="false">Branding</a>
+              </li>
+              <li class="nav-item projects-tabs__item ">
+                <a class="nav-link projects-tabs__link " id="marketing-tab" data-toggle="tab" href="#marketing" role="tab"
+                  aria-controls="marketing" aria-selected="false">Marketing</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 tab-content">
+            <div class="tab-pane active" id="all" role="tabpanel" aria-labelledby="all-tab">
+              <div class="row projects">
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/book.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Book cover design</div>
+                    <div class="project-item__subheading">Branding</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/knight.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Knight</div>
+                    <div class="project-item__subheading">Web development</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/coffee.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Packging Design</div>
+                    <div class="project-item__subheading">Branding</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/mockup.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Happy Onam</div>
+                    <div class="project-item__subheading">Web Design</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/branding.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Rags</div>
+                    <div class="project-item__subheading">Branding</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/beer.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Product Design</div>
+                    <div class="project-item__subheading">Marketing</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="tab-pane" id="graphic" role="tabpanel" aria-labelledby="graphic-tab">
+              <div class="row projects">
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/book.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Book cover design</div>
+                    <div class="project-item__subheading">Branding</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/knight.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Knight</div>
+                    <div class="project-item__subheading">Web development</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/coffee.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Packging Design</div>
+                    <div class="project-item__subheading">Branding</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/mockup.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Happy Onam</div>
+                    <div class="project-item__subheading">Web Design</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/branding.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Rags</div>
+                    <div class="project-item__subheading">Branding</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/beer.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Product Design</div>
+                    <div class="project-item__subheading">Marketing</div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane" id="brandings" role="tabpanel" aria-labelledby="branding-tab">
+              <div class="row projects">
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/book.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Book cover design</div>
+                    <div class="project-item__subheading">Branding</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/knight.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Knight</div>
+                    <div class="project-item__subheading">Web development</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/coffee.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Packging Design</div>
+                    <div class="project-item__subheading">Branding</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/mockup.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Happy Onam</div>
+                    <div class="project-item__subheading">Web Design</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/branding.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Rags</div>
+                    <div class="project-item__subheading">Branding</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/beer.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Product Design</div>
+                    <div class="project-item__subheading">Marketing</div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane" id="marketing" role="tabpanel" aria-labelledby="marketing-tab">
+              <div class="row projects">
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/book.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Book cover design</div>
+                    <div class="project-item__subheading">Branding</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/knight.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Knight</div>
+                    <div class="project-item__subheading">Web development</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/coffee.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Packging Design</div>
+                    <div class="project-item__subheading">Branding</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/mockup.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Happy Onam</div>
+                    <div class="project-item__subheading">Web Design</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/branding.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Rags</div>
+                    <div class="project-item__subheading">Branding</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="project-item">
+                    <div class="project-item__thumbnail-container">
+                      <img src="/images/beer.png" class="project-item__thumbnail">
+                      <div class="project-item__overlay">
+                        <a href="#" class="project-item__button"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="project-item__button"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="project-item__heading">Product Design</div>
+                    <div class="project-item__subheading">Marketing</div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- !projects -->
+    </section>
+
+    <section class="section section--video">
+      <div class="container">
+        <div class="row video">
+          <div class="col-md-6">
+            <div class="video__heading-top">
+              OUR'S ACHIEVEMENTS
+            </div>
+            <div class="video__heading">
+              4578+ Projects Completed Over the world.
+            </div>
+
+            <div class="video__counters row">
+
+              <div class="col-md-4 col-6 video__counter">
+                <div class="video__counter-value">
+                  2315
+                </div>
+                <div class="video__counter-label">
+                  Clients
+                </div>
+              </div>
+
+              <div class="col-md-4 col-6 video__counter">
+                <div class="video__counter-value">
+                  3043
+                </div>
+                <div class="video__counter-label">
+                  Members
+                </div>
+              </div>
+
+              <div class="col-md-4 col-6 video__counter">
+                <div class="video__counter-value">
+                  125
+                </div>
+                <div class="video__counter-label">
+                  Awards
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="video__btn-container col-md-6 d-flex align-items-center justify-content-center">
+            <div class="video__play-btn" id="video-modal-btn" data-toggle="modal"
+              data-src="https://www.youtube.com/embed/h_D3VFfhvs4" data-target="#video-modal"></div>
+          </div>
+
+        </div>
+      </div>
+      <!-- !video -->
+    </section>
+
+    <section class="section section--recent-posts">
+      <div class="container section__skewed-content">
+        <div class="section__heading-top">OUR BLOG</div>
+        <h3 class="section__heading">Latest posts</h3>
+        <div class="row">
+
+          <article class="col-md-4 col-sm-6 mb-md-0  mb-4 article">
+            <img class="article__thumbnail" src="/images/office-3.png" alt="office-3">
+            <div class="article__date">January 25, 2017 <span class="mx-2">/</span> Art & Design</div>
+            <h4 class="article__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do</h4>
+            <div class="article__read-more">READ MORE <i class="fa fa-caret-right"></i> </div>
+            <a href="#" class="article__link"></a>
+          </article>
+
+          <article class="col-md-4 col-sm-6 mb-md-0 mb-4 article">
+            <img class="article__thumbnail" src="/images/office-2.png" alt="office-3">
+            <div class="article__date">January 25, 2017 <span class="mx-2">/</span> Art & Design</div>
+            <h4 class="article__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do</h4>
+            <div class="article__read-more">READ MORE <i class="fa fa-caret-right"></i> </div>
+            <a href="#" class="article__link"></a>
+          </article>
+
+          <article class="col-md-4 col-sm-6   article">
+            <img class="article__thumbnail" src="/images/office-1.png" alt="office-3">
+            <div class="article__date">January 25, 2017 <span class="mx-2">/</span> Art & Design</div>
+            <h4 class="article__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do</h4>
+            <div class="article__read-more">READ MORE <i class="fa fa-caret-right"></i> </div>
+            <a href="#" class="article__link"></a>
+          </article>
+
+        </div>
+      </div>
+      <!-- !latest news -->
+    </section>
+    <!-- !content -->
+  </section>
+
+  <footer class="footer">
+    <div class="footer__content container">
+      <div class="row">
+        <div class="col-md-3  col-sm-6 mb-5">
+          <a href="#" class="footer__logo">STARTYPLY.</a>
+          <div class="footer__descr">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+          </div>
+          <div class="footer__address">
+            795 Folsom Ave, Suite 600
+            San Francisco, CA 94107
+          </div>
+          <div class="footer__phone">
+            <a href="tel::+0123 456 78910">Call: +0123 456 78910</a>
+          </div>
+
+          <div class="footer__email">
+            <a href="mailto:info@flattheme.com">info@flattheme.com</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-5">
+          <h4 class="footer__title">Recent Posts</h4>
+          <article class="footer__article">
+            <h5 class="footer__article-title">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+            </h5>
+            <div class="footer__article-date">January 25, 2017</div>
+
+            <a href="#" class="footer__article-link"></a>
+          </article>
+          <article class="footer__article footer__article--last">
+            <h5 class="footer__article-title">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+            </h5>
+            <div class="footer__article-date">January 25, 2017</div>
+
+            <a href="#" class="footer__article-link"></a>
+          </article>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-5">
+          <h4 class="footer__title">
+            Useful Links
+          </h4>
+          <ul class="footer__useful-links">
+            <li><a href="#"><i class="fa fa-caret-right"></i>General Information for users</a></li>
+            <li><a href="#"><i class="fa fa-caret-right"></i>Interactive Fairy Tales</a></li>
+            <li><a href="#"><i class="fa fa-caret-right"></i>Offical Storybook Maker Website</a></li>
+            <li><a href="#"><i class="fa fa-caret-right"></i>Everyday Mathematics Links</a></li>
+            <li><a href="#"><i class="fa fa-caret-right"></i>Basic Knowledge and Experience</a></li>
+            <li><a href="#"><i class="fa fa-caret-right"></i>Our Support</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 ">
+          <h4 class="footer__title">Recent Tweets</h4>
+
+          <div class="footer__tweets">
+            <div class="footer__tweet">
+              <div class="footer__tweet-date"><i class="fa fa-twitter"></i> 1 day ago</div>
+              <div class="footer__tweet-title">Creative Web Designs for Insipiration</div>
+              <div class="footer__tweet-tags"><span class="footer__tweet-author">@Startuply</span> #design
+                #wordpress
+                #theme </div>
+              <a href="#" class="footer__tweet-link"></a>
+            </div>
+
+            <div class="footer__tweet footer__tweet--last">
+              <div class="footer__tweet-date"><i class="fa fa-twitter"></i> 1 day ago</div>
+              <div class="footer__tweet-title">Creative Web Designs for Insipiration</div>
+              <div class="footer__tweet-tags"><span class="footer__tweet-author">@Startuply</span> #design
+                #wordpress
+                #theme </div>
+              <a href="#" class="footer__tweet-link"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
