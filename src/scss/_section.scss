@@ -70,7 +70,7 @@
     @extend %background-image;
     position: relative;
     z-index: 3;
-    background-image: url("/images/code.png");
+    background-image: url("../images/code.png");
     color: $white;
 
     &::before {
