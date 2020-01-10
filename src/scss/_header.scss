@@ -8,16 +8,34 @@
   color: $white;
   border-bottom: 1px solid rgba($white, 0.1);
 
+  &__menu-toggle {
+    svg {
+      fill: currentColor;
+    }
+    display: none;
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+    margin-right: 15px;
+  }
+
   &__logo {
     font-size: 34px;
     font-weight: 700;
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+    }
   }
 
   &__buttons {
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
   }
 
   &__menu {
     font-size: 15px;
+    justify-content: center;
     .menu__item {
       a {
         display: inline-block;
@@ -30,20 +48,33 @@
         color: $primary;
       }
     }
+
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
   }
 
   &__button {
     padding: 23px 37px;
     font-weight: 700;
     border-radius: 100px;
+    display: inline-block;
 
     &:hover {
-      color: $primary;
+      color: inherit;
     }
 
     &--active {
       color: $primary;
       background-color: $white;
+      &:hover {
+        color: $primary-darken;
+      }
     }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }

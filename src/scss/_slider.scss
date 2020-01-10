@@ -9,6 +9,11 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 64px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
   }
   &__item {
   }
@@ -45,6 +50,9 @@
     font-style: italic;
     color: $white;
     margin-bottom: 50px;
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+    }
   }
 
   &__author {
@@ -66,12 +74,12 @@
   }
 
   .slick-dots {
-      position: absolute;
-      bottom: 70px;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
   }
 }
 

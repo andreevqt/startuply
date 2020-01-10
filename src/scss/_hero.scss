@@ -52,6 +52,9 @@
     #{$parent}__hidden {
       opacity: 1;
       visibility: visible;
+      @include media-breakpoint-down(sm) {
+        height: auto;
+      }
     }
     background-color: $white;
   }
@@ -93,9 +96,15 @@
   }
 
   &__hidden {
-    transition: opacity 0.25s;
+    transition: opacity 0.25s height 0.8s;
     opacity: 0;
     visibility: hidden;
+
+    @include media-breakpoint-down(sm) {
+      height: 0;
+      overflow: hidden;
+    }
+    
   }
 
   &__read-more {

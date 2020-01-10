@@ -128,4 +128,9 @@
     color: $white;
     font-weight: 700;
   }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }

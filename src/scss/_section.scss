@@ -3,6 +3,11 @@
   padding-top: 150px;
   padding-bottom: 150px;
 
+  @include media-breakpoint-down(sm) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &--our-history {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -54,6 +59,11 @@
   &--testimonials {
     padding-top: 0;
     padding-bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 
   &--video {
@@ -62,7 +72,6 @@
     z-index: 3;
     background-image: url("/images/code.png");
     color: $white;
-
 
     &::before {
       position: absolute;
@@ -80,18 +89,20 @@
     position: relative;
     z-index: 2;
     background-color: $white;
+    margin-top: -60px;
+    margin-bottom: -60px;
+
     #{$parent}__heading,
     #{$parent}__heading-top {
       font-weight: 300;
       text-align: center;
     }
 
-    margin-top: -60px;
-
-    margin-bottom: -60px;
-
     #{$parent}__skewed-content {
       transform: skew(0, -$angle);
+      @include media-breakpoint-down(sm) {
+        padding-top: 50px;
+      }
     }
     transform: skew(0, $angle);
   }
