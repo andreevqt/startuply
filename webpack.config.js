@@ -47,7 +47,8 @@ module.exports = (env, argv) => {
       compress: true,
       hot: true,
       contentBase: Path.join(__dirname, 'src'),
-      watchContentBase: true
+      watchContentBase: true,
+      disableHostCheck: true
     },
     watchOptions: {
       aggregateTimeout: 300,
