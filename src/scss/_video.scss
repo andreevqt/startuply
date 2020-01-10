@@ -39,7 +39,7 @@
     transition: transform 0.25s linear;
 
     @extend %background-image;
-    background-image: url("/images/play-button.png");
+    background-image: url("images/play-button.png");
     background-size: 100px 100px;
     border-radius: 50%;
 
