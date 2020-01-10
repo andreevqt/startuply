@@ -1,5 +1,5 @@
-# Take landing page
-This is an implementation of psd template provided by [Blaz Robar](http://blazrobar.com/free-psd-website-templates/take-a-free-mobile-app-landing-page-psd-template/)
+# Startuply - startup landing page
+This is an implementation of psd template provided by [Abdullah Un Noman ](https://dribbble.com/unnoman)
 
 ## Build
     npm install
