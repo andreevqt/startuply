@@ -50,7 +50,6 @@
     font-style: italic;
     color: $white;
     margin-bottom: 50px;
-    flex-shrink: 0;
     @include media-breakpoint-down(sm) {
       font-size: 18px;
     }
@@ -61,6 +60,12 @@
     flex-shrink: 0;
     color: rgba($white, 0.7);
     font-size: 18px;
+  }
+
+  &__quote,
+  &__author {
+    max-width: 100%;
+    flex-shrink: 0;
   }
 
   &__inner {
