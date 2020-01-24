@@ -2,7 +2,6 @@ import './bootstrap';
 import 'slick-carousel';
 import 'bootstrap/js/dist/tab';
 import 'bootstrap/js/dist/modal';
-import counterUp2 from 'counterup2';
 require('waypoints/lib/noframework.waypoints.js');
 
 $(() => {
@@ -42,17 +41,28 @@ $(() => {
     $("#videoEmbed").attr('src', null);
   })
 
-  const counters = $('.video__counter-value');
+  const animateCounter = (elem) => {
+    const value = elem.data('counter');
+    $({ counter: 0 }).animate({
+      counter: value,
+    }, {
+      duration: 2000,
+      easing: 'swing',
+      step: function () {
+        elem.text(Math.ceil(this.counter));
+      }
+    });
+  }
 
   new Waypoint({
     element: document.querySelector('.video__counters'),
     handler: function () {
-      counters.each((i, el) => {
-        counterUp2(el);
+      $('.video__counter-value').each((index, elem) => {
+        animateCounter($(elem));
       })
       this.destroy()
     },
-    offset: 'bottom-in-view',
+    offset: '75%',
   });
 
   $('.mobile-menu__close').click((e) => {

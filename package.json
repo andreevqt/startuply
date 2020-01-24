@@ -31,7 +31,6 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
-    "counterup2": "^1.0.4",
     "css-loader": "^3.0.0",
     "exports-loader": "^0.7.0",
     "popper.js": "^1.16.0",

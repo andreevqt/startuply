@@ -121,7 +121,7 @@
   }
 
   @include media-breakpoint-down(sm) {
-    padding-top: 20px;
+    padding-top: 160px + 20px;
     padding-bottom: 20px;
   }
 }
