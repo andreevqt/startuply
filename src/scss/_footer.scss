@@ -7,6 +7,7 @@
   color: #fefefe;
   font-size: 14px;
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: '';
