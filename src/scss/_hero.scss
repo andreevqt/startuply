@@ -5,20 +5,18 @@
   min-height: 500px;
   margin-top: -170px - 36px;
   padding-top: 240px;
-  transform: skew(0, $angle) translateY(-36px);
-  background-color: $primary;
-  &__content {
-    transform: skew(0, -$angle);
-  }
-  &::before {
+  @extend %background-image;
+  background-image: url("../images/hero_bg.png");
+
+  &::after {
+    content: '';
     position: absolute;
-    content: "";
-    top: 0;
+    z-index: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    @extend %background-image;
-    background-image: url("../images/hero_bg.png");
+    border-bottom: 160px solid $white;
+    border-right: 100vw solid transparent;
   }
 }
 

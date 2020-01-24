@@ -89,8 +89,7 @@
     position: relative;
     z-index: 2;
     background-color: $white;
-    margin-top: -60px;
-    margin-bottom: -60px;
+    
 
     #{$parent}__heading,
     #{$parent}__heading-top {
@@ -99,12 +98,10 @@
     }
 
     #{$parent}__skewed-content {
-      transform: skew(0, -$angle);
       @include media-breakpoint-down(sm) {
         padding-top: 50px;
       }
     }
-    transform: skew(0, $angle);
   }
 }
 
