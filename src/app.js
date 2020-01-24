@@ -69,8 +69,8 @@ $(() => {
     body.removeClass('mobile-menu-is-shown');
   });
 
-  $('.header__menu-toggle').click((e) => {
-    body.addClass('mobile-menu-is-shown');
-  })
+  $('.header__toggle').click((e) => {
+    body.toggleClass('mobile-menu-is-shown');
+  });
 
 });

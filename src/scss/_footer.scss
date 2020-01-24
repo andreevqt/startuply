@@ -7,11 +7,11 @@
   color: #fefefe;
   font-size: 14px;
   position: relative;
-  overflow: hidden;
 
   &::before {
     content: '';
     position: absolute;
+    z-index: 0;
     top: 0;
     left: 0;
     right: 0;

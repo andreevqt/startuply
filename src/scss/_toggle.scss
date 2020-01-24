@@ -1,0 +1,65 @@
+.toggle {
+    position: relative;
+    border: none;
+    display: inline-block;
+    background-color: $toggle-bg;
+    padding: $toggle-padding;
+    width: $toggle-width;
+    height: $toggle-height;
+    overflow: hidden;
+  
+    &:focus {
+      outline: 0;
+    }
+  
+    &__inner {
+      top: calc(50% - #{$toggle-inner-height} / 2);
+      left: $toggle-padding;
+      right: $toggle-padding;
+      opacity: 1;
+      transition: opacity 0.5s linear, transform 0.3s linear;
+    }
+  
+    &__inner,
+    &::before,
+    &::after {
+      background-color: $toggle-color;
+      position: absolute;
+      height: $toggle-inner-height;
+      right: $toggle-padding;
+      left: $toggle-padding;
+      border-radius: 100px;
+    }
+  
+    &::before,
+    &::after {
+      transition: transform 0.2s ease-out;
+    }
+  
+    &::before {
+      content: "";
+      top: $toggle-padding;
+    }
+  
+    &::after {
+      content: "";
+      bottom: $toggle-padding;
+    }
+  }
+  
+  .mobile-menu-is-shown {
+    .toggle__inner {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  
+    $dy: ($toggle-height - $toggle-padding * 2 - $toggle-inner-height) / 2;
+  
+    .toggle::before {
+      transform: translateY($dy) rotate(-45deg);
+    }
+  
+    .toggle::after {
+      transform: translateY(-$dy) rotate(45deg);
+    }
+  }

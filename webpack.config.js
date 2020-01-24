@@ -17,7 +17,7 @@ module.exports = (env, argv) => {
       filename: 'js/[name].js',
       path: Path.resolve(__dirname, 'dist')
     },
-    devtool: argv.mode !== 'production'? 'source-map' : false,
+    devtool: argv.mode !== 'production' ? 'source-map' : false,
     optimization: {
       minimizer: [
         new TerserJSPlugin({ sourceMap: true }),
@@ -39,7 +39,8 @@ module.exports = (env, argv) => {
       }),
       new CopyPlugin([
         { context: 'src/', from: '**/*.html' },
-        { from: 'images/*'}
+        { from: 'images/*' },
+        { from: 'dist', to: '../docs' }
       ])
     ],
     devServer: {
