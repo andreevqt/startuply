@@ -40,11 +40,16 @@ module.exports = (env, argv) => {
       }),
 
       new FileManagerPlugin({
+        onStart: {
+          copy: [
+            { source: 'src/**/*.html', destination: 'dist' },
+            { source: 'src/images', destination: 'dist/images' }
+          ]
+        },
         onEnd: {
           copy: [
             { source: 'dist', destination: 'docs' },
-            { source: 'src/**/*.html', destination: 'dist' },
-            { source: 'images', destination: 'dist/images' }
+
           ]
         }
       })
