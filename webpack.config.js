@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 module.exports = (env, argv) => {
 
@@ -37,11 +38,16 @@ module.exports = (env, argv) => {
         filename: 'css/[name].css',
         chunkFilename: '[id].css',
       }),
-      new CopyPlugin([
-        { context: 'src/', from: '**/*.html' },
-        { from: 'images/*' },
-        { from: 'dist', to: '../docs' }
-      ])
+
+      new FileManagerPlugin({
+        onEnd: {
+          copy: [
+            { source: 'dist', destination: 'docs' },
+            { source: 'src/**/*.html', destination: 'dist' },
+            { source: 'images', destination: 'dist/images' }
+          ]
+        }
+      })
     ],
     devServer: {
       port: 80,

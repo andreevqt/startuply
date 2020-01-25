@@ -1,7 +1,7 @@
 .header {
   position: relative;
   z-index: 2;
-  height: 200px;
+  padding: 70px 0;
   line-height: 1;
   $parent: &;
   color: $white;
@@ -98,13 +98,13 @@
   }
 
   @media screen and (max-width: 1200px) {
-    height: 64px;
+    padding: 20px 0;
   }
 }
 
 .mobile-menu-is-shown {
   overflow: hidden;
-  @include media-breakpoint-down(sm) {
+  @media screen and (max-width: 1200px) {
     .header__menu {
       transform: translateX(0);
     }

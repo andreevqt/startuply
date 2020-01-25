@@ -9,7 +9,7 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 0;
     top: 0;
@@ -17,6 +17,10 @@
     right: 0;
     border-bottom: 160px solid transparent;
     border-right: 100vw solid $white;
+
+    @include media-breakpoint-down(sm) {
+      border-bottom-width: 80px;
+    }
   }
 
   &__logo {
